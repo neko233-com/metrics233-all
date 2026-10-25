@@ -6,7 +6,7 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | ebfd82cd9919974dfd21d969834c3c1011e17395 | 0.2.28 palette candidate follows the immutable 0.2.27 release candidate. Frontend 169 units/build passed; browser, hosted CI and production gates remain separate. Accepted active runtime is still private 0.2.26 at 1da41fefa8ea9412d58756d94cfd002be983262b. |
+| metrics233-server | 079012c54d04c35889a92d6eff3d8fd65c89a2ab | Documentation receipt; public v0.2.28 and accepted native production runtime fix ebfd82cd9919974dfd21d969834c3c1011e17395. Full hosted tag CI, reproducible five-platform packages, anonymous downloads and actual Edge acceptance passed separately. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
@@ -15,13 +15,20 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 
 ## Accepted online behavior
 
-Public release closure is currently in progress: the 0.2.26 candidate's complete Windows suite found 14 failures
-(87 passed / 2 external-SQL skips), including a real tablet topbar overflow and outdated UI expectations.
-Its hosted Docker job passed and the test job was explicitly cancelled. The immutable tag remains unchanged.
-The corrected 0.2.27 candidate passed the focused cases; its two five-platform builds have identical seven-file
-delivery sets, independently checked ZIP CRC, metadata, architecture and binary identities. Both README languages
-are packaged, and the Chinese input is covered by the build fingerprint. Full archive-native/browser/tag-CI and
-production results will be recorded after completion, independently from the already accepted 0.2.26 runtime below.
+Public release closure is accepted. [Final v0.2.28](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.28)
+fixes ebfd82c and passes [full exact-tag CI](https://github.com/neko233-com/metrics233-server/actions/runs/40198818834).
+Its two five-platform builds produce identical seven-file delivery sets; independent ZIP CRC, source/provenance,
+architecture and binary checks pass. Every published file was anonymously downloaded over HTTPS and hash-matched.
+Both README languages are packaged. Actual Windows ZIP browser validation passes 101 cases without retries,
+with two external-SQL skips; all three SQL browser cases separately pass against real MySQL/PostgreSQL.
+Actual Linux ZIP confined runtime/browser passes twice (152.120 s), and real database integration passes (207.759 s).
+Native production 0.2.28 and Edge verify seven real instances, the completed GitHub Dark layers, search/category/
+environment, note save/search/reopen/restoration and actual per-NIC traffic. Card/canvas identity and explicit NIC
+choice survive refresh; 1512/768/390px layouts and console checks pass. The supported server roadmap is now 95%.
+The preceding immutable v0.2.27 separately passed its full CI and anonymous downloads. The initial v0.2.26 Windows
+candidate's 87 passes / 14 failures / 2 SQL skips, successful Docker job and explicitly cancelled test job remain
+historical evidence; no failed tag was rewritten or described as green. Detailed identities and boundaries are in
+the child ledger and private deployment receipts.
 
 - Private 0.2.26 completed immutable native preparation, full Go tests, 169 frontend units/build, native account/token readiness, collector/archive/download checks and dependency audit with zero known advisories. Full source vet and six layout-browser cases passed separately. Exact-source runtime Docker/browser checks passed twice (204.782 s), including restart and offline restore with the original memory assertions; four real database/eight protocol fixture flows passed twice on the corrected transport source. Edge verified actual GitHub Dark tokens, all seven instances, formal filtering/IP search and the note persistence/restoration flow, plus real LAN/Linux NIC data and retained canvas/NIC selection across refresh. A reviewed existing-collector apply produced six real host panels without duplicate scraping or alerts; its versioned layout now has readable 200px instruments and full-width per-volume capacity. Desktop and 390px mobile renders passed, with mobile client/scroll width both 390px and no captured warnings/errors. Charts, racing gauges and threshold colors remain independent of console chrome. No game binaries, synthetic samples, high load or new Feishu messages were introduced for this unit. Detailed intermediate/final source attribution remains in the child status ledger and private deployment receipts.
 - Private 0.2.24 passed the full immutable worker, 169 frontend units/build, native readiness, collector and archive/download checks, plus the patched dependency audit (zero known advisories). Deployment 439 succeeded and actual runtime health reports 0.2.24/database=ok. Edge verified seven real cards and explicit physical-host resources, category/environment/global ordering, Chinese multiline note save/search/reopen/restore, and separate service/NIC throughput with interface switching. LAN collector heartbeats expose 17 interfaces; the existing Linux exporter now exposes netdev. Card and canvas DOM identity, search drafts and chosen NIC survive same-scope refresh; 390px layout has no horizontal overflow. The GitHub Dark console palette stays independent from Grafana classic line and threshold-gauge rendering. The final concept/render comparison and intentional native-panel differences are documented in the child instance-directory contract. Producer aliases are pushed separately; this is not a claim of a new game binary rollout or gameplay login.
