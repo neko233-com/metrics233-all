@@ -25,6 +25,9 @@ flowchart TB
   TSDB --> Query[Indexed PromQL queries]
   Query --> Dashboards[Host, process and business dashboards]
   Control --> Dashboards
+  External[Optional Prometheus / SQL / Loki / Tempo] --> Adapters[Authenticated query adapters]
+  Accounts --> Adapters
+  Adapters --> Dashboards
   Query --> Alerts[Sustained conditions, recovery and cooldown]
   Alerts --> Feishu[Signed Feishu cards and templates]
   Windows[Explicit metric-window vector extraction] --> Vectors[Embedded Badger and HNSW]

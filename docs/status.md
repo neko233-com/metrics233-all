@@ -6,7 +6,7 @@ Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | 2c42a30d17a6835e5e74d6c8484bea202e7202f4 | Receipt-only pin; immutable v0.2.30/runtime source is 17791c531c8941b5df56abdb706f4e6435663227. Full tag CI, native production, actual ZIP/browser/runtime, Edge and all seven anonymous release downloads accepted. |
+| metrics233-server | b0c9045c880d682bae100cba6583656f9beccc9d | Verification/CI/docs only; runtime remains immutable v0.2.30/17791c531c8941b5df56abdb706f4e6435663227. Full release-tag CI, production, actual ZIP/browser/runtime, Edge and seven anonymous downloads remain accepted; subsequent verification runs have separate identities below. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
@@ -14,6 +14,23 @@ Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence 
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
 
 ## Accepted online behavior
+
+The default embedded runtime additionally passes a ten-minute isolated sustained workload: 4000 series,
+500 samples/s, 304000 ACKed observations and 600 queries from one reader concurrent with writes. Latest-value sum and total sample
+count remain exact after restart. The actual verified Linux v0.2.30 binary in unchanged formal confinement records
+87609344-byte cgroup peak, 5320 KiB complete active data before restart and no OOM/throttling. Write/query p95 are
+17.534/13.223ms. This is a specific declared workload; image/cache/backups and arbitrary cardinality/compression
+are not folded into these active-data figures. See the child sustained-profile contract.
+
+Real Tempo 3.1.1 OTLP ingestion, TraceQL search, span hierarchy/duration/error state, missing trace and authenticated
+HTTP/browser deep links pass locally; Edge inspects the same actual daemon data. The deterministic leading-zero
+case also passes twice. The first cold-pull stderr/ID failure and cancelled test job remain. Full source 86f1081
+passes all vet/race, 103 default browser cases/three skips (8.3m) and repeated Docker, but its old randomized
+fixture fails on a valid leading-zero ID. That complete workflow remains failed. Final deterministic 15b917a passes
+[focused hosted verification](https://github.com/neko233-com/metrics233-server/actions/runs/40219239682), including
+two zero-retry actual Linux/browser rounds in 21.222s, negative cases and vet (job 2m38s).
+[Combined b0c9045 full verification](https://github.com/neko233-com/metrics233-server/actions/runs/40220691425)
+is active. These are interoperability tests, not a production Tempo installation or a new binary rollout.
 
 Production [v0.2.30](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.30) fixes source 17791c5.
 GitHub Dark page/panel/navigation/control layers stay independent from Grafana classic lines and racing gauges.
