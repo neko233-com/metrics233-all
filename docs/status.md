@@ -6,7 +6,7 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | cdaf7147c438743fa60b1243f1ea84d1273ba9dd | Public 0.2.27 candidate: tablet topbar fix, current browser contracts and bilingual downloadable startup guidance; final gates remain in progress. Accepted active runtime is still private 0.2.26 at 1da41fefa8ea9412d58756d94cfd002be983262b. |
+| metrics233-server | ebfd82cd9919974dfd21d969834c3c1011e17395 | 0.2.28 palette candidate follows the immutable 0.2.27 release candidate. Frontend 169 units/build passed; browser, hosted CI and production gates remain separate. Accepted active runtime is still private 0.2.26 at 1da41fefa8ea9412d58756d94cfd002be983262b. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
