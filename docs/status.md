@@ -6,14 +6,14 @@ Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | 2cfed2db61dae2e2fb1deb73a9e27b54b905b331 | Documentation receipt over immutable UI candidate 6270a48/v0.2.31; actual ZIP/Edge checks accepted, its tag CI and production upgrade pending. Online runtime remains v0.2.30/17791c531c8941b5df56abdb706f4e6435663227. |
+| metrics233-server | 17ddd844a2c6c64b2cf902e16619189dfc0dc6e1 | Documentation receipt over immutable runtime 6270a48/v0.2.31. Formal public release, complete tag CI, actual ZIP validation, anonymous downloads, native production rollout and production Edge are accepted. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
 | metrics233-client-sdk-csharp | 95a93a7d1b19d1f5d14b555996d0afa7c37a1209 | GitHub v0.1.0 plus Metrics233.Client NuGet artifact; NuGet.org upload is separate. |
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
 
-## 0.2.31 archive/Edge acceptance; formal publication and rollout pending
+## 0.2.31 public release, complete CI and production Edge accepted
 
 Source/tag 6270a48a800eaf74f4ff8153baed159eff13d81c/v0.2.31 fixes current-snapshot expiry and overdue refresh
 after a suspended tab. It retains GitHub Dark chrome, independent Grafana classic/gauge palettes, historical
@@ -32,8 +32,31 @@ body counters become unknown after the real 90-second deadline; open note/search
 manual refresh restore nonzero rates. A multiline note saves and matches the combined note/SDK search. No captured
 warnings/errors or browser-clock/response substitution; the unassociated host is correctly unknown. Owned temporary
 pages, container, volume and verification image are cleaned; shared caches remain. Production data is untouched.
-Seven draft GitHub digests match the local deliveries. Full tag workflow 40222966206 is running (Docker passed);
-formal release, anonymous download, production rollout and production Edge remain pending. The server roadmap is 96%.
+[Complete exact-tag workflow 40222966206](https://github.com/neko233-com/metrics233-server/actions/runs/40222966206)
+passes: test 41m54s, complete Go vet/race 31m29s, 106 default browser cases/three environment skips/8.1m without
+retries, two owned real-Tempo API/browser rounds and Docker 7m53s. Dedicated SQL and Tempo runs cover the real
+environments skipped by the default suite. [v0.2.31](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.31)
+was formally published at 2026-10-25 19:32:55 UTC; all seven anonymous official HTTPS downloads (215594380 bytes)
+match the independently verified local artifacts.
+
+The existing single private native pipeline deploys fixed source 6270a48 as 0.2.31 after private tests/vet,
+backup/target preflight, 174 frontend units/build, complete Go tests, collector cross-builds and immutable
+archive/download checks. Official account/ingest readiness and actual process/source/version/hash readback pass.
+Private control-plane identities and credentials remain separate; native unit settings are not described as
+the confined Docker settings.
+
+Production Edge reloads the deployed release and observes seven real reporting identities. With refresh Off,
+an actual wait past 90 seconds expires all 21 host CPU/memory/disk values and 14 service receive/send values to
+unknown, with overdue footers and retained open note/search drafts. Manual refresh restores current values and
+freshness. Release filtering returns two cards, LAN-IP search one and the Rust gateway category one. The gateway
+retains three racing gauges and two real traffic curves; idle service bytes remain separate from active physical
+NIC traffic. A temporary note is saved, found and reopened, then restored to its original empty value.
+Fourteen unpaused rules show zero firing/pending and current evaluations; actual LAN CPU warning parameters are
+30s evaluation/600s sustained trigger/300s recovery/3600s cooldown. The original business entry, empty search and
+default 5s refresh are restored; final seven cards have complete numeric resources and no captured browser
+warnings/errors. No clocks/responses are replaced, fake production samples injected, thresholds changed or
+extra provider notifications sent for this check. GitHub Dark console chrome and Grafana classic/racing renderers
+remain independent. The server roadmap stays 96%; this is not unlimited capacity or optional-technology parity.
 
 ## Accepted online behavior
 
@@ -57,7 +80,7 @@ retries, repeated Docker 8m52s and two actual Tempo/browser rounds in 20.272s. T
 the contract skipped by the unowned default suite. R2c closes; these are interoperability tests, not a production
 Tempo installation or a new binary rollout.
 
-Production [v0.2.30](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.30) fixes source 17791c5.
+The earlier production [v0.2.30](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.30) fixes source 17791c5.
 GitHub Dark page/panel/navigation/control layers stay independent from Grafana classic lines and racing gauges.
 Active-NIC defaults use fresh traffic and retain explicit choices; content-width instruments use three/two/one/one
 columns at 1512/1100/768/390px. Edge verifies seven real instance cards, release/category/IP search, multiline-note
