@@ -1,12 +1,12 @@
 # Delivery evidence
 
-Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence and production deployment are separate acceptance layers.
+Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence and production deployment are separate acceptance layers.
 
 ## Current composition
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | 079012c54d04c35889a92d6eff3d8fd65c89a2ab | Documentation receipt; public v0.2.28 and accepted native production runtime fix ebfd82cd9919974dfd21d969834c3c1011e17395. Full hosted tag CI, reproducible five-platform packages, anonymous downloads and actual Edge acceptance passed separately. |
+| metrics233-server | 2c42a30d17a6835e5e74d6c8484bea202e7202f4 | Receipt-only pin; immutable v0.2.30/runtime source is 17791c531c8941b5df56abdb706f4e6435663227. Full tag CI, native production, actual ZIP/browser/runtime, Edge and all seven anonymous release downloads accepted. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
@@ -14,6 +14,39 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
 
 ## Accepted online behavior
+
+Production [v0.2.30](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.30) fixes source 17791c5.
+GitHub Dark page/panel/navigation/control layers stay independent from Grafana classic lines and racing gauges.
+Active-NIC defaults use fresh traffic and retain explicit choices; content-width instruments use three/two/one/one
+columns at 1512/1100/768/390px. Edge verifies seven real instance cards, release/category/IP search, multiline-note
+save/search/reopen/restoration, real per-NIC receive/send and independent service bytes. Same-scope card/canvas,
+search draft and manual NIC remain mounted/selected through refresh; no overflow or console warnings/errors were
+captured. Mobile normal-click/keyboard closing now uses a visible backdrop outside the 250px drawer.
+
+The actual Windows ZIP passes 103 zero-retry browser cases with two external-SQL skips (7.4 min). The Linux ZIP
+passes ten normal mobile-shell rounds (41.9 s) and two unchanged confined runtime/browser rounds (156.531 s).
+Two five-platform builds are byte-identical; independent ZIP/source/architecture/binary checks and all seven
+anonymous official downloads pass. [Full exact-tag CI](https://github.com/neko233-com/metrics233-server/actions/runs/40210846886)
+is green: test 28m00s including full Go vet/race and hosted browser 103 passed/two SQL-environment skips (7.3 min,
+no retries), Docker 10m50s. Native production passed its full worker, actual process/source/hash checks and official
+account/token healthcheck. The docs-only pin does not imply recompiling the runtime; private deployment identities
+remain separate. A new real SQL-browser run or native Darwin/Linux arm64 execution is not claimed. Roadmap remains 95%.
+
+### Earlier 0.2.29 acceptance and retained failure
+
+Production 0.2.29 fixes immutable source 352c4c5. Host automatic NIC choice uses fresh traffic and preserves the
+first useful selection; manual idle/missing choices retain their exact history. Content-width instruments use
+three/two/one columns without changing the GitHub Dark console or the independent Grafana/racing palettes.
+The actual Windows ZIP passes 103 browser cases with zero retries and two external-SQL skips. The initial missing-Go
+PATH attempt (16 fixture startup failures) is retained separately. Actual Linux ZIP runtime/browser passes twice
+(159.852 seconds); independent five-platform builds produce identical seven-file sets. Edge on seven real instances
+verifies search/categories/environments, Chinese note persistence/restoration, per-NIC rates, original card/canvas
+retention and 1512/1100/768/390 containment. Full hosted race and Docker pass; the final Linux mobile-backdrop case
+failed twice (102 passed/two skipped/one failed). Its immutable tag/draft remain; the 0.2.30 correction passes Windows
+five/Linux ten zero-retry repetitions; its final publication/download closure is recorded above. Child contracts distinguish current Grafana workflows
+from the historical October 12 audit. Weighted server roadmap remains 95%.
+
+### Previous public release closure
 
 Public release closure is accepted. [Final v0.2.28](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.28)
 fixes ebfd82c and passes [full exact-tag CI](https://github.com/neko233-com/metrics233-server/actions/runs/40198818834).
@@ -51,6 +84,6 @@ the child ledger and private deployment receipts.
 
 The current server pin adds authenticated Agent operation schemas for instance resources/host association/ranking, explicit stale-report labels and virtual-list scroll reset after sorting. Discovery/business tests and vet, 163 frontend units and production build passed. Its immutable 0.2.20 rollout passed all full-worker/readiness/archive gates and actual target deployment. Live discovery returned the four expected operations/roles; six instance resource associations and complete-set SQL sorting passed again (132 eligible rows at final readback). Aggregate composition ac55170e876781f561feb7c966f0cede0581b067 was pushed and independently cloned with all six submodules. Every pinned SHA matched, the new checkout was clean, and its six-module public-source/history gate passed. This subsequent receipt update changes documentation only.
 
-The public-source checker now covers all six canonical children, CSharp/ESM source and lock files. Exact earlier two/three-module compositions are accepted only in history. Private deployment identities, addresses and receipts stay in the separate private repository. Overall server roadmap weighting remains 94%; no new game-account Login/Ready/Ping or nonzero player-lifecycle acceptance is claimed.
+The public-source checker now covers all six canonical children, CSharp/ESM source and lock files. Exact earlier two/three-module compositions are accepted only in history. Private deployment identities, addresses and receipts stay in the separate private repository. Overall server roadmap weighting remains 95%; no new game-account Login/Ready/Ping or nonzero player-lifecycle acceptance is claimed.
 
 Earlier evidence is retained in [the historical ledger](history-20261022-before-native-cutover.md) and the server's own docs/status.md.
