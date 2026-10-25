@@ -6,12 +6,34 @@ Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | b0c9045c880d682bae100cba6583656f9beccc9d | Verification/CI/docs only; runtime remains immutable v0.2.30/17791c531c8941b5df56abdb706f4e6435663227. Full release-tag CI, production, actual ZIP/browser/runtime, Edge and seven anonymous downloads remain accepted; subsequent verification runs have separate identities below. |
+| metrics233-server | 2cfed2db61dae2e2fb1deb73a9e27b54b905b331 | Documentation receipt over immutable UI candidate 6270a48/v0.2.31; actual ZIP/Edge checks accepted, its tag CI and production upgrade pending. Online runtime remains v0.2.30/17791c531c8941b5df56abdb706f4e6435663227. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
 | metrics233-client-sdk-csharp | 95a93a7d1b19d1f5d14b555996d0afa7c37a1209 | GitHub v0.1.0 plus Metrics233.Client NuGet artifact; NuGet.org upload is separate. |
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
+
+## 0.2.31 archive/Edge acceptance; formal publication and rollout pending
+
+Source/tag 6270a48a800eaf74f4ff8153baed159eff13d81c/v0.2.31 fixes current-snapshot expiry and overdue refresh
+after a suspended tab. It retains GitHub Dark chrome, independent Grafana classic/gauge palettes, historical
+curves, mounted cards/canvases, note/search drafts and explicit NIC selection. Red regressions reproduce both old
+failures before the corrections. Five focused browser cases pass in 9.6s, 174 units/build pass and the complete
+candidate browser suite passes 106 cases/three environment skips/7.5m without retries.
+
+Two clean-source five-platform builds produce identical seven-file deliveries. ZIP/CRC/architecture/provenance
+and Windows-native version checks pass; the actual Windows ZIP repeats all 106 cases/three skips without retries.
+The actual Linux ZIP (in-container SHA/version verified) passes two formal confined runtime/browser rounds in
+158.247s and a separate four-database/three real SQL-browser run in 210.734s; SQL browser itself takes 26.2s.
+Its eight memory.current snapshots max at 134332416 bytes, without presenting that as a kernel peak.
+
+Edge uses an independent loopback-only instance of the same Linux ZIP. With refresh Off, actual synthetic HTTP
+body counters become unknown after the real 90-second deadline; open note/search drafts remain. New samples and
+manual refresh restore nonzero rates. A multiline note saves and matches the combined note/SDK search. No captured
+warnings/errors or browser-clock/response substitution; the unassociated host is correctly unknown. Owned temporary
+pages, container, volume and verification image are cleaned; shared caches remain. Production data is untouched.
+Seven draft GitHub digests match the local deliveries. Full tag workflow 40222966206 is running (Docker passed);
+formal release, anonymous download, production rollout and production Edge remain pending. The server roadmap is 96%.
 
 ## Accepted online behavior
 
@@ -30,7 +52,10 @@ fixture fails on a valid leading-zero ID. That complete workflow remains failed.
 [focused hosted verification](https://github.com/neko233-com/metrics233-server/actions/runs/40219239682), including
 two zero-retry actual Linux/browser rounds in 21.222s, negative cases and vet (job 2m38s).
 [Combined b0c9045 full verification](https://github.com/neko233-com/metrics233-server/actions/runs/40220691425)
-is active. These are interoperability tests, not a production Tempo installation or a new binary rollout.
+passes: test job 42m07s, complete vet/race 31m40s, 103 default browser cases/three environment skips/8.1m without
+retries, repeated Docker 8m52s and two actual Tempo/browser rounds in 20.272s. The dedicated live step executes
+the contract skipped by the unowned default suite. R2c closes; these are interoperability tests, not a production
+Tempo installation or a new binary rollout.
 
 Production [v0.2.30](https://github.com/neko233-com/metrics233-server/releases/tag/v0.2.30) fixes source 17791c5.
 GitHub Dark page/panel/navigation/control layers stay independent from Grafana classic lines and racing gauges.
