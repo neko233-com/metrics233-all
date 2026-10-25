@@ -11,6 +11,8 @@ flowchart TB
   Browser[浏览器后台] --> Accounts[账号登录与角色权限]
   Agent[Agent HTTP API 与 CLI] --> Accounts
   Accounts --> Control[配置、模板与版本化更新]
+  Accounts --> Probe[真实协议探测与接入方案预览]
+  Probe --> Control
   Players[公开游戏客户端] --> Relay[鉴权的业务后端]
   Relay --> SDK[Go / Rust / TypeScript / CSharp SDK]
   Games[游戏逻辑服与网关] --> SDK
@@ -43,6 +45,10 @@ flowchart TB
 | 元数据 | 采集器、上报来源、主机管理。 |
 
 主机关联由管理员明确保存，共用公网出口不自动认作同一主机。业务实例按 environment、channel、service、role、serverId、instance、implementation 完整区分，不改写原有自定义模板。
+
+控制台采用 GitHub Dark 背景、分层卡片和绿色操作按钮；Grafana 折线图、跑车仪表盘和风险阈值保持独立配色。
+在「仪表盘 → 基础设施」快速接入真实数据库或 Exporter，预览实际指标对应的面板与持续告警，再一起保存。
+已有采集器可复用受保护配置生成面板，不重复抓取或新增重复告警。支持范围、角色与上限见[快速接入契约](metrics233-server/docs/quick-connect.md)。
 
 SQL 和地区表支持最多 **5 重排序**：点击表头选择主排序，Shift + 点击追加次排序，也可编辑优先级和方向。服务端先排序完整的有界结果集，再分页或取前10；缺失值始终放最后。默认查看最近 **60 分钟**。
 

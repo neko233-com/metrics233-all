@@ -11,6 +11,8 @@ flowchart TB
   Browser[Browser console] --> Accounts[Account login and RBAC]
   Agent[Agent HTTP API and CLI] --> Accounts
   Accounts --> Control[Configuration, templates and versioned updates]
+  Accounts --> Probe[Real protocol probe and reviewed connection plan]
+  Probe --> Control
   Players[Public game clients] --> Relay[Authenticated business backend]
   Relay --> SDK[Go / Rust / TypeScript / CSharp SDK]
   Games[Game processes and gateway] --> SDK
@@ -43,6 +45,12 @@ Time series do not use one OLTP row per observation by default. The embedded TSD
 | Metadata | Collectors, reporting sources and managed hosts. |
 
 Host relationships are explicitly confirmed by an administrator. Sharing a public IP never makes two instances the same machine. Environment, channel, service, role, serverId, instance and implementation scope every business view. Existing customized templates are preserved.
+
+The console uses GitHub Dark backgrounds, layered surfaces and green actions. Grafana-style line colors, racing
+gauges and risk thresholds keep their independent rendering palette. In **Dashboards → Infrastructure**, Quick
+connect tests a real database/exporter and previews observed-only panels plus sustained alerts before applying
+them together. Existing collectors reuse protected settings without duplicate scraping or alerts. See the
+[connection contract](metrics233-server/docs/quick-connect.md) for supported profiles, roles and limits.
 
 SQL and region tables support up to **five ordered sort rules**: click a header for the primary sort, Shift-click for another, or edit priority/direction. The server sorts the complete bounded result before pagination or Top10; missing values remain missing. The default window is **60 minutes**.
 
