@@ -6,7 +6,7 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | f6ef8334409e8e1905c5dc2f7d8d0c17f323a927 | Accepted private 0.2.26 runtime source is 1da41fefa8ea9412d58756d94cfd002be983262b. This pin adds the final production/Edge acceptance receipt without changing runtime code. |
+| metrics233-server | cdaf7147c438743fa60b1243f1ea84d1273ba9dd | Public 0.2.27 candidate: tablet topbar fix, current browser contracts and bilingual downloadable startup guidance; final gates remain in progress. Accepted active runtime is still private 0.2.26 at 1da41fefa8ea9412d58756d94cfd002be983262b. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
@@ -14,6 +14,14 @@ Updated: 2026-10-25. Source, local tests, packages, hosted CI, browser evidence 
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
 
 ## Accepted online behavior
+
+Public release closure is currently in progress: the 0.2.26 candidate's complete Windows suite found 14 failures
+(87 passed / 2 external-SQL skips), including a real tablet topbar overflow and outdated UI expectations.
+Its hosted Docker job passed and the test job was explicitly cancelled. The immutable tag remains unchanged.
+The corrected 0.2.27 candidate passed the focused cases; its two five-platform builds have identical seven-file
+delivery sets, independently checked ZIP CRC, metadata, architecture and binary identities. Both README languages
+are packaged, and the Chinese input is covered by the build fingerprint. Full archive-native/browser/tag-CI and
+production results will be recorded after completion, independently from the already accepted 0.2.26 runtime below.
 
 - Private 0.2.26 completed immutable native preparation, full Go tests, 169 frontend units/build, native account/token readiness, collector/archive/download checks and dependency audit with zero known advisories. Full source vet and six layout-browser cases passed separately. Exact-source runtime Docker/browser checks passed twice (204.782 s), including restart and offline restore with the original memory assertions; four real database/eight protocol fixture flows passed twice on the corrected transport source. Edge verified actual GitHub Dark tokens, all seven instances, formal filtering/IP search and the note persistence/restoration flow, plus real LAN/Linux NIC data and retained canvas/NIC selection across refresh. A reviewed existing-collector apply produced six real host panels without duplicate scraping or alerts; its versioned layout now has readable 200px instruments and full-width per-volume capacity. Desktop and 390px mobile renders passed, with mobile client/scroll width both 390px and no captured warnings/errors. Charts, racing gauges and threshold colors remain independent of console chrome. No game binaries, synthetic samples, high load or new Feishu messages were introduced for this unit. Detailed intermediate/final source attribution remains in the child status ledger and private deployment receipts.
 - Private 0.2.24 passed the full immutable worker, 169 frontend units/build, native readiness, collector and archive/download checks, plus the patched dependency audit (zero known advisories). Deployment 439 succeeded and actual runtime health reports 0.2.24/database=ok. Edge verified seven real cards and explicit physical-host resources, category/environment/global ordering, Chinese multiline note save/search/reopen/restore, and separate service/NIC throughput with interface switching. LAN collector heartbeats expose 17 interfaces; the existing Linux exporter now exposes netdev. Card and canvas DOM identity, search drafts and chosen NIC survive same-scope refresh; 390px layout has no horizontal overflow. The GitHub Dark console palette stays independent from Grafana classic line and threshold-gauge rendering. The final concept/render comparison and intentional native-panel differences are documented in the child instance-directory contract. Producer aliases are pushed separately; this is not a claim of a new game binary rollout or gameplay login.
