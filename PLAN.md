@@ -4,10 +4,12 @@
   are implemented in metrics233-server. Real MyDB → collection → Prometheus query and Grafana 13.2.3 with a
   Viewer datasource identity pass; 24 native panels/11 sustained rules and 14 Grafana panels are verified at
   API level and actual Edge rendering. The MyDB form uses only the read-only token; non-loopback collection
-  requires HTTPS and URLs omit query parameters. The pinned source is bb151e9, including complete thirteen-kind
-  API/browser assertions and the MyDB Bearer-only form check. Two final clean five-platform builds match all seven
+  requires HTTPS and URLs omit query parameters. The pinned source is 7043b6b, including complete thirteen-kind
+  API/browser/CLI assertions and the MyDB Bearer-only form check. The CLI package tests and vet pass after its
+  historical catalog-count correction. Two final clean five-platform builds match all seven
   delivery files; independent CRC, architecture, provenance and checksum checks pass. Runtime binary hashes match
-  the preceding two-round confined Linux archive acceptance. Complete final Windows browser/hosted CI, public
+  the preceding two-round confined Linux archive acceptance and the 106-case zero-retry Windows archive browser
+  acceptance. Complete final-source hosted CI, public
   release, public HTTPS deployment and notification delivery remain separately tracked acceptance layers.
 - [MyDB v0.1.37](https://github.com/neko233-com/mydb/releases/tag/v0.1.37) is formally published at fixed source
   29c1548 after three native-platform CI gates and bounded formal-Docker recovery faults. Eight anonymous public
