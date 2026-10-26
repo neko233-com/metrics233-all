@@ -4,8 +4,10 @@
   are implemented in metrics233-server. Real MyDB → collection → Prometheus query and Grafana 13.2.3 with a
   Viewer datasource identity pass; 24 native panels/11 sustained rules and 14 Grafana panels are verified at
   API level and actual Edge rendering. The MyDB form uses only the read-only token; non-loopback collection
-  requires HTTPS and URLs omit query parameters. Public HTTPS deployment, notification delivery,
-  release and gitlink updates remain separate.
+  requires HTTPS and URLs omit query parameters. The pinned source is 040a0c9, including the complete
+  thirteen-kind integration assertion. Two clean five-platform release builds match all seven delivery files.
+  Full candidate CI, archive runtime/browser checks, public release, public HTTPS deployment and notification
+  delivery remain separately tracked acceptance layers.
 
 Updated: 2026-10-27. The aggregate owns composition, SDK/server integration and public/private delivery boundaries. Detailed server work remains in metrics233-server/PLAN.md.
 
