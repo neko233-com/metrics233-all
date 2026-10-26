@@ -1,16 +1,24 @@
 # metrics233-all execution plan
 
-- 2026-10-27 candidate: native MyDB authenticated collection and observed-only performance/security dashboards
+- 2026-10-27 release 0.2.32: native MyDB authenticated collection and observed-only performance/security dashboards
   are implemented in metrics233-server. Real MyDB → collection → Prometheus query and Grafana 13.2.3 with a
   Viewer datasource identity pass; 24 native panels/11 sustained rules and 14 Grafana panels are verified at
   API level and actual Edge rendering. The MyDB form uses only the read-only token; non-loopback collection
-  requires HTTPS and URLs omit query parameters. The pinned source is 7043b6b, including complete thirteen-kind
+  requires HTTPS and URLs omit query parameters. The released runtime source is 7043b6b, including complete thirteen-kind
   API/browser/CLI assertions and the MyDB Bearer-only form check. The CLI package tests and vet pass after its
   historical catalog-count correction. Two final clean five-platform builds match all seven
   delivery files; independent CRC, architecture, provenance and checksum checks pass. Runtime binary hashes match
   the preceding two-round confined Linux archive acceptance and the 106-case zero-retry Windows archive browser
-  acceptance. Complete final-source hosted CI, public
-  release, public HTTPS deployment and notification delivery remain separately tracked acceptance layers.
+  acceptance. Complete final-source CI 40405214660 passes, and all seven formal public release downloads match.
+  Each of two real-database rounds passes all three SQL browser cases; after correcting an unloaded-image fixture,
+  the actual final Linux ZIP passes two runtime/browser/restore rounds in 159.248s under 1 CPU/256 MiB.
+  A real MyDB failure/restart verifies the default sustained alert lifecycle and persisted history with 3.95 MB
+  peak fixture data. The existing production pipeline deploys the fixed source/version; standard HTTPS health
+  and four anonymous 401 boundaries pass. Edge verifies fresh existing MySQL 18-panel data, managed-host heartbeat,
+  14 unpaused rules and the thirteen-kind Bearer-only MyDB form with no console warnings/errors. A production
+  MyDB target, Grafana installation and external notification delivery are not inferred from fixture acceptance.
+  The automatic tag repeat CI remains separate from the successful complete fixed-source manual run.
+  The aggregate's receipt-only server pin is 7bc53c7; the immutable release/deployed runtime stays 7043b6b.
 - [MyDB v0.1.37](https://github.com/neko233-com/mydb/releases/tag/v0.1.37) is formally published at fixed source
   29c1548 after three native-platform CI gates and bounded formal-Docker recovery faults. Eight anonymous public
   downloads match, Windows/Linux actual packages pass protocol/auth/privacy checks, and the native Windows
