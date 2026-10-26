@@ -1,6 +1,13 @@
 # metrics233-all execution plan
 
-Updated: 2026-10-26. The aggregate owns composition, SDK/server integration and public/private delivery boundaries. Detailed server work remains in metrics233-server/PLAN.md.
+- 2026-10-27 candidate: native MyDB authenticated collection and observed-only performance/security dashboards
+  are implemented in metrics233-server. Real MyDB → collection → Prometheus query and Grafana 13.2.3 with a
+  Viewer datasource identity pass; 24 native panels/11 sustained rules and 14 Grafana panels are verified at
+  API level and actual Edge rendering. The MyDB form uses only the read-only token; non-loopback collection
+  requires HTTPS and URLs omit query parameters. Public HTTPS deployment, notification delivery,
+  release and gitlink updates remain separate.
+
+Updated: 2026-10-27. The aggregate owns composition, SDK/server integration and public/private delivery boundaries. Detailed server work remains in metrics233-server/PLAN.md.
 
 - [x] Default embedded sustained profile: actual verified v0.2.30 Linux archive in formal 1 CPU/256m runtime, 4000 series and 500 samples/s for ten minutes. All 304000 observations and 600 queries from one reader concurrent with writes pass; latest values/count remain exact after restart. Kernel peak 87.6 MB, complete active data before restart 5.45 MB, write/query p95 17.534/13.223ms. This is a bounded declared workload, not a generic capacity/compression SLO.
 - [x] Real Tempo interoperability: official pinned 3.1.1 daemon, actual OTLP/search/detail and zero-retry browser/Edge checks pass. Failed cold-pull/random-ID fixtures retain their attribution. Final combined b0c9045 full workflow 40220691425 passes complete Go vet/race, 103 default browser cases/three environment skips/zero retries, repeated Docker and two actual Tempo/browser rounds in 20.272s. No production Tempo installation is implied.
