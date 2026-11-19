@@ -1,5 +1,10 @@
 # metrics233-all execution plan
 
+- 2026-11-19 monitoring workspace: platform filters and windowed server rows, Chinese-first navigation, startup storage
+  selection and the Vite+ / React Router build are implemented. The authenticated Home page reports the active storage.
+  Go store, server and CLI tests, 177 web units and 27 targeted Edge cases passed. Windows and Linux amd64 webui binaries
+  were compiled with CGO disabled. Production deployment evidence is recorded separately.
+
 - 2026-10-27 release 0.2.32: native MyDB authenticated collection and observed-only performance/security dashboards
   are implemented in metrics233-server. Real MyDB → collection → Prometheus query and Grafana 13.2.3 with a
   Viewer datasource identity pass; 24 native panels/11 sustained rules and 14 Grafana panels are verified at

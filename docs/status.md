@@ -1,12 +1,12 @@
 # Delivery evidence
 
-Updated: 2026-10-26. Source, local tests, packages, hosted CI, browser evidence and production deployment are separate acceptance layers.
+Updated: 2026-11-19. Source, local tests, packages, hosted CI, browser evidence and production deployment are separate acceptance layers.
 
 ## Current composition
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | 17ddd844a2c6c64b2cf902e16619189dfc0dc6e1 | Documentation receipt over immutable runtime 6270a48/v0.2.31. Formal public release, complete tag CI, actual ZIP validation, anonymous downloads, native production rollout and production Edge are accepted. |
+| metrics233-server | 2cb310069ccb136bf02d97b51b339b3ff74e7154 | Chinese-first monitoring workspace, virtual server rows, startup storage strategies and Vite+ / React Router. Local Go, web and targeted browser checks passed. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
