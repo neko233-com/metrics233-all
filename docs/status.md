@@ -6,12 +6,22 @@ Updated: 2026-11-19. Source, local tests, packages, hosted CI, browser evidence 
 
 | Module | Source | Published/runtime boundary |
 | --- | --- | --- |
-| metrics233-server | 2cb310069ccb136bf02d97b51b339b3ff74e7154 | Chinese-first monitoring workspace, virtual server rows, startup storage strategies and Vite+ / React Router. Local Go, web and targeted browser checks passed. |
+| metrics233-server | 2cb310069ccb136bf02d97b51b339b3ff74e7154 | Chinese-first monitoring workspace, virtual server rows, startup storage strategies and Vite+ / React Router. Local Go, web and targeted browser checks passed. This source was deployed as 0.2.37. |
 | metrics233-lib-go | 4f63688e023bce29b1e6b79c14733e246bc277b6 | Go SDK release 0.1.0; real game reporting remains active. |
 | metrics-lib-rust | 3a58fff2901e001984b45791fb884d23e3d8f9b7 | Official crates.io metrics233 0.1.0 is available; this pin only updates its guidance. |
 | metrics233-client-sdk-typescript | 152ee85e628cca8a3126cc61b2bb9593c062a1ba | GitHub v0.1.0 plus installable tgz; npm registry upload is separate. |
 | metrics233-client-sdk-csharp | 95a93a7d1b19d1f5d14b555996d0afa7c37a1209 | GitHub v0.1.0 plus Metrics233.Client NuGet artifact; NuGet.org upload is separate. |
 | metrics233-client-sdk-rust | 8c78e875f278e9d764733486367bb1afe260ee71 | Official crates.io 0.1.0 and GitHub v0.1.0 share identical immutable package bytes. Current pin records installation and real-server acceptance. |
+
+## 0.2.37 production workspace
+
+The fixed-source deployment of 2cb310069ccb136bf02d97b51b339b3ff74e7154 completed on 2026-11-19.
+Public HTTPS reports 0.2.37 and database OK. An authenticated Edge session rendered the Chinese Home,
+server directory, saved views and search pages. The 390px views stayed within the viewport. Live filtering
+returned WeChat, TapTap, Douyin and shared server rows and the overdue filter agreed with the catalog counts.
+At verification time, 16 of 17 server identities had recent reports and two enabled managed hosts had recent
+resource samples. The active backend was embedded. A fixed historical query returned the same 24 samples
+before and after the deployment, and the new process produced fresh uptime samples.
 
 ## 0.2.31 public release, complete CI and production Edge accepted
 
